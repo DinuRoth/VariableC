@@ -29,7 +29,7 @@ Aber wir haben doch noch gar nie ein Monopol gemessen!
 Ausgehend von diesen Annahmen und der starken Bindungskraft stelle ich mir die Monopole wie einen metallischen Festkörper vor: Freie Minuspole in einem Gitter von Pluspolen. Nehmen wir das einfachste Metall Lithium-6 als Analogon: Die starke Bindung lässt den Gitterabstand in den Femtometer-Bereich absinken.
 
 <details>
-  <summary><strong>🐇 Rabbit Hole: Wie dicht ist dieses Vakuum-Gitter gepackt? (Ein Festkörper-Analog)</strong></summary>
+  <summary><strong>Herleitung der Gitterkonstante</strong></summary>
 
   <p>Wenn wir Diracs Gleichung in moderne SI-Einheiten übersetzen und nutzen, um die Monopolladung (in Weber) mit einem Elektron zu vergleichen, stoßen wir in der Physik auf den Kehrwert der Feinstrukturkonstante. Das Resultat:</p>
   <p>Die kleinste magnetische Monopolladung $g$ ist exakt <strong>68,5-mal stärker</strong> als die elektrische Elementarladung $e$.</p>
