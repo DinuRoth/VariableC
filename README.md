@@ -12,7 +12,7 @@ Bei der Entwicklung seiner Speziellen Relativitätstheorie hat Albert Einstein e
 
 Hätte Einstein sich gleich entschieden, wenn er diese Probleme schon gekannt hätte?
 
-Ich werde versuchen, mithilfe von Ideen von Paul Dirac, Ernst Mach und James Maxwell ein anderes Weltbild zu konstruieren. Nach Anleitung von William Thomson und Oliver Heaviside.
+Ich werde versuchen, mithilfe von Ideen von Paul Dirac, Ernst Mach und James Maxwell ein anderes Weltbild zu konstruieren. Nach Anleitung von William Thomson und Oliver Heaviside. > [Über den Autor & die Motivation hinter diesem Projekt](AUTHOR.md)
 
 ### 1. Annahme: Magnetische Monopole existieren
 Paul Dirac hat aufgezeigt, wie schön die Mathematik wird, wenn es nicht nur elektrische, sondern auch magnetische Monopole gibt. Wie symmetrisch die elektromagnetische Welt wird. Mithilfe von Planck können wir wissen, wie stark so ein Monopol wäre:
