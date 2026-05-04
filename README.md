@@ -20,7 +20,7 @@ Paul Dirac hat aufgezeigt, wie schön die Mathematik wird, wenn es nicht nur ele
 
 $$e \cdot g = n \frac{\hbar c}{2}$$
 oder
-$$g = e \cdot \frac{\alpha}{2}$$
+$$g = \frac{e}{2\alpha}$$
 
 Ein magnetischer Monopol ist also rund 60 mal stärker als ein Elektron.
 
