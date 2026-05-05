@@ -15,7 +15,7 @@ Hätte Einstein sich gleich entschieden, wenn er diese Probleme schon gekannt h�
 Ich werde versuchen, mithilfe von Ideen von Paul Dirac, Ernst Mach und James Maxwell ein anderes Weltbild zu konstruieren. Nach Anleitung von William Thomson und Oliver Heaviside. 
 > [Über den Autor & die Motivation hinter diesem Projekt](AUTHOR.md)
 
-### 1. Annahme: Magnetische Monopole existieren
+### Annahme 1: Magnetische Monopole existieren
 Paul Dirac hat aufgezeigt, wie schön die Mathematik wird, wenn es nicht nur elektrische, sondern auch magnetische Monopole gibt. Wie symmetrisch die elektromagnetische Welt wird. Mithilfe von Planck können wir wissen, wie stark so ein Monopol wäre:
 
 $$e \cdot g = n \frac{\hbar c}{2}$$
@@ -34,7 +34,7 @@ Ein magnetischer Monopol ist also rund 60 mal stärker als ein Elektron.
   </tr>
 </table>
 
-### 2. Annahme: Es gibt viele magnetische Monopole. Sehr viele
+### Annahme 2: Es gibt viele magnetische Monopole. Sehr viele
 Ausgehend von diesen Annahmen und der starken Bindungskraft stelle ich mir die Monopole wie einen metallischen Festkörper vor: Freie Minuspole in einem Gitter von Pluspolen. Nehmen wir das einfachste Metall Lithium-6 als Analogon: Die starke Bindung lässt den Gitterabstand in den Femtometer-Bereich absinken.
 
 <details>
@@ -60,5 +60,51 @@ Ausgehend von diesen Annahmen und der starken Bindungskraft stelle ich mir die M
 
 </details>
 
+Wir leben also in einem Meer von magnetischen Monopolen.
 
+<table width="100%">
+  <tr>
+    <td>
+      <strong>Dann lass uns doch auf's Vakuum schiessen und die Monopole messen!</strong><br>
+      <em>Die Energien, die in einem Beschleuniger frei werden, reichen dazu sicher aus.</em>
+    </td>
+  </tr>
+</table>
 
+### Freie Monopole
+Die Bindungsenergie zwischen Monopolen ist mit einigen MeV zwar sehr hoch, aber richtig, grosse technische Anlagen kriegen das hin. Aber eben: Das Vakuum besteht aus dem Monopol-Material. Ein gelöstes Monopol wird gleich wieder ins Gitter eingebunden.
+Es ist, als würde man ein Metall-Ion in einem Metallblock aus dem Gitter lasern. Es löst sich und wird etwas weiter in einem kälteren Bereich wieder eingebunden.
+
+<table width="100%">
+  <tr>
+    <td>
+      <strong>Ja, aber wir würden ja merken, wenn wir durch so ein Material wandern würden.</strong><br>
+    </td>
+  </tr>
+</table>
+
+### Trägheit
+Das tun wir ja. Die Materie, aus der wir bestehen, besteht aus elektrischen Ladungen. Wir sind elektrische Wesen. Wir fallen nicht zum Erdmittelpunkt, weil die elektrische Wirkung viel grösser ist als die gravitative. Was passiert nun, wenn wir eine elektrische Ladung in einem Magnetfeld beschleunigen? Es entsteht eine Induktion, die eine Gegenkraft erzeugt.
+
+<table width="100%">
+  <tr>
+    <td>
+      <strong>Aber ein Neutron ist auch träge!</strong><br>
+    </td>
+  </tr>
+</table>
+
+Im Grunde genommen ist ein Neutron auch nur zwei eng beieinander liegende elektrische Ladungen. Da das Monopol-Gitter viel kleiner ist als ein Atom wirken die beiden Ladungen, es ist nicht elektrisch neutral für das Gitter.
+
+<table width="100%">
+  <tr>
+    <td>
+      <strong>Aber ein Elektron ist weniger träge als ein Proton!</strong><br>
+    </td>
+  </tr>
+</table>
+
+Es ist ja auch kleiner. Aber hier fehlt mir der Sachverstand, um das weiter verfolgen zu können. Ich kenne mich in der Teilchenphysik, den starken und schwachen Kernkräften viel zu wenig aus. Ein Fass möchte ich aber trotzdem aufmachen:
+### Die Elektrische Ladung als Topologische Störung
+Wenn wir uns das Monopol-Gitter in 4 Dimensionen (analog zur Raumzeit) vorstellen, dann ist unsere Realität, also was wir wahrnehmen können, eine 3D-Projektion. Wir erfahren den räumlichen Schnitt zu genau einem Zeitpunkt. Der Zeitpunkt wandert, wie ein Schnitt in einem MRT.
+Wenn nun die Monopole in einem Bereich z.B. toroidal verwunden sind und unser Scanner über diesen Bereich läuft, dann sind das für uns bewegte magnetische Ladungen. Durch den Schnitt sieht das dann aus wie eine elektrische Ladung.
