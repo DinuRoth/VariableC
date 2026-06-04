@@ -127,7 +127,7 @@ Eine chaotische Bewegung eines Gitters führt dazu, dass sich Schallwellen wenig
 ### Beeinflussung von Massen durch Massen
 Ein heisses Gitter bewirkt eine räumliche Ausdehnung, die Gitterkonstante wird grösser. Die elektrische Masse spührt einen Druck innerhalb des Gitters, welcher bei einem loseren Gitter kleiner ist. Deshalb bewegen sich Massen aufeinander zu.
 
-Die Lichtbrechung und die Gravitation sind also zwei unterschiedliche Phänomene.
+Die Lichtbeugung an Massen und die Gravitation sind also zwei unterschiedliche Phänomene.
 
 ## Temperatur-Dissipation
 Wie bei der Festkörper-Physik auch, will sich die Temperatur im ganzen Monopol-Gitter ausgleichen. Das Gitter ist im Vakuum alles andere als kalt, stattdessen haben wir eine Durchschnittstemperatur, die den Wert von c und vielleicht sogar die Stärke der Trägheitskopplung bestimmt. Ernst Mach hatte schon eine Idee in diese Richtung.
