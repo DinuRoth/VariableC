@@ -132,8 +132,21 @@ Die Lichtbeugung an Massen und die Gravitation sind also zwei unterschiedliche P
 ## Temperatur-Dissipation
 Wie bei der Festkörper-Physik auch, will sich die Temperatur im ganzen Monopol-Gitter ausgleichen. Das Gitter ist im Vakuum alles andere als kalt, stattdessen haben wir eine Durchschnittstemperatur, die den Wert von c und vielleicht sogar die Stärke der Trägheitskopplung bestimmt. Ernst Mach hatte schon eine Idee in diese Richtung.
 
+## Berechnung
+Mit diesen kühnen Annahmen habe ich eine Simulation in Julia programmiert:
+- Die Lichtgeschwindigkeit ist variabel
+- Das Licht ist eine Transversalwelle im Monopol-Gitter
+- Massen heizen das Monopol-Gitter wie einen Festkörper
+
+In [dieser Simulation](Code/monopolgitter%20-%20lichtbrechung.jl) habe ich die Lichtbeugung an der Sonne simuliert, wie von Arthur Stanley Eddington beobachtet. Dabei habe ich curve-fitting der Monopol-Erregung betrieben, bis ich auf die beobachteten 1.75 Bogensekunden gestossen bin. Die "Heizleistung" der Sonne ist 5.92 km. 
+Mit diesem Wert habe ich die [Lichtverzögerung gemäss Irwin Shapiro](Code/monopolgitter%20-%20verzögerung.jl) mit dem System Erde - Sonne - Venus simuliert und bin auf die gemessenen 200 μs gekommen.
+Umgerechnet auf die Masse der Sonne von ca 2e30 kg kommen wir auf den Einflussfaktor der Masse auf das Monopolgitter von 2.96e-27 m/kg. Google Gemini hat mich darauf hingewiesen, dass das einfach dem Term $4G/c^2$ entspricht.
+
+## Die Basis-Lichtgeschwindigkeit c<sub>0</sub>
+In den Simulationen habe die Basis-Lichtgeschwindigkeit mit unseren bekannten 299792458 m/s eingesetzt. Wenn wir mit der Massedichte im beobachtbaren Universum und den 2.96e-27 rechnen, können wir die Basis-Lichtgeschwindigkeit in unserem Universum herleiten, es ist keine Konstante mehr, die einfach so in den Raum gestellt wurde.
+
 ## Flüssiger Raum
-Wenn wir das Gedankenexperiment weiter treiben: Gibt es eine Temperatur, bei der die Bindungen der Monopole aufbricht und wir kein Gitter mehr haben? Was wäre die Folge: Eine ganz anderes Ausbreitungsverhalten. Vielleicht sind Schwarze Löcher keine Singularitäten sondern flüssiges Monopol-Material.
+Wenn wir das Gedankenexperiment weiter treiben: Gibt es eine Temperatur, bei der die Bindungen der Monopole aufbricht und wir kein Gitter mehr haben? Was wäre die Folge: Eine ganz anderes Ausbreitungsverhalten. Vielleicht sind Schwarze Löcher keine Singularitäten sondern flüssiges Monopol-Material. Eine Flüssigkeit kann keine Transversalwellen propagieren, Licht wird geschluckt.
 
 ## Quantenmechanik im Monopol-Gitter
 Wenn wir schon am spekulieren sind: Ist die Quantenmechanik eine Folge der Gitterschwingung? Wenn die Gitterkonstante die Planck-Länge ist, gäbe es ganz einfach nichts kleineres. Und eine Wirkung könnte nur übertragen werden, wenn ein Signal stärker als das Temperatur-Rauschen ist, andernfalls geht es darin unter.
