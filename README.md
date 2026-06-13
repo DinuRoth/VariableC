@@ -140,13 +140,49 @@ Mit diesen kühnen Annahmen habe ich eine Simulation in Julia programmiert:
 
 In [dieser Simulation](Code/monopolgitter%20-%20lichtbrechung.jl) habe ich die Lichtbeugung an der Sonne simuliert, wie von Arthur Stanley Eddington beobachtet. Dabei habe ich curve-fitting der Monopol-Erregung betrieben, bis ich auf die beobachteten 1.75 Bogensekunden gestossen bin. Die "Heizleistung" der Sonne ist 5.92 km. 
 Mit diesem Wert habe ich die [Lichtverzögerung gemäss Irwin Shapiro](Code/monopolgitter%20-%20verzögerung.jl) mit dem System Erde - Sonne - Venus simuliert und bin auf die gemessenen 200 μs gekommen.
-Umgerechnet auf die Masse der Sonne von ca 2e30 kg kommen wir auf den Einflussfaktor der Masse auf das Monopolgitter von 2.96e-27 m/kg. Google Gemini hat mich darauf hingewiesen, dass das einfach dem Term $4G/c^2$ entspricht.
+Umgerechnet auf die Masse der Sonne von ca 2e30 kg kommen wir auf den Einflussfaktor der Masse auf das Monopolgitter von 2.96e-27 m/kg. Google Gemini hat mich darauf hingewiesen, dass das einfach dem Term $4G/c^2$ entspricht. Nennen wir diesen Wert mal P, so quasi als Heizleistung.
+
+$$c = \frac{1}{\sqrt{\epsilon_0 \mu_0}}$$
+
+Wagen wir den Schritt, und behaupten, die magnetische Welt sei der grundlegende Mechanismus.
+
+$$\epsilon_0 = \frac{1}{\mu_0 c^2}$$
+
+$$P = 4G \cdot \epsilon_0 \mu_0$$
+
+$$G = \frac{P}{4 \epsilon_0 \mu_0}$$
+
+## Massen beinflussen Massen
+
+Jetzt wo wir G haben, könnten wir Newtonsche Planetenbahnen berechnen. Aber Merkur's Perihel bleibt noch schön konstant.
+
 
 ## Die Basis-Lichtgeschwindigkeit c<sub>0</sub>
 In den Simulationen habe die Basis-Lichtgeschwindigkeit mit unseren bekannten 299792458 m/s eingesetzt. Wenn wir mit der Massedichte im beobachtbaren Universum und den 2.96e-27 rechnen, können wir die Basis-Lichtgeschwindigkeit in unserem Universum herleiten, es ist keine Konstante mehr, die einfach so in den Raum gestellt wurde.
+
+<table width="100%">
+  <tr>
+    <td>
+      <strong>Jetzt hör mal auf, den Äther hat Michaelson-Morley schon lange beerdigt!</strong><br>
+    </td>
+  </tr>
+</table>
+
+Genau hier liegt das klassische Missverständnis historischer Äther-Modelle. Michelson und Morley haben ein absolutes Trägermedium widerlegt, durch das wir uns wie ein Objekt durch eine Flüssigkeit bewegen. Aber in unserem Modell bewegen wir uns nicht durch das Material. Wir sind strukturelle Phänomene des Materials.Elektrische Materie betrachten wir als topologische Defekte (Gitterfehler) im Monopol-Kondensat. Wenn sich ein physikalischer Körper bewegt, translatiert kein massiver Fremdkörper durch einen leeren Raum. Stattdessen propagiert eine komplexe Struktur aus topologischen Defekten durch das Gitter. Diese Topologie-Defekte beeinflussen sich gegenseitig durch elektromagnetische Wechselwirkung. Der entscheidende Punkt dabei ist: Jede Beeinflussung wird strikt mit der lokalen Wellenausbreitungsgeschwindigkeit des Gitters (lokales c) propagiert. Was bedeutet das für unsere makroskopischen Messungen?
+<ul><li> Die Poincaré-Gruppe als physikalische Konsequenz: Henri Poincaré und Hendrik Lorentz haben mathematisch formalisiert, wie sich Systeme zwingend verhalten müssen, deren interne Bindungskräfte sich mit einer endlichen Signalgeschwindigkeit ausbreiten.</li><li>Dynamische Längenkontraktion: Ein Massband oder ein Interferometer wird durch elektromagnetische Kräfte zwischen den Atomen zusammengehalten. Bewegt sich dieses System durch das Gitter, müssen die vermittelnden Felder der Defekte "gegen" die Propagationsgeschwindigkeit anlaufen. Um das dynamische Gleichgewicht der Bindungskräfte aufrechtzuerhalten, kontrahiert das physikalische System zwingend in Bewegungsrichtung.</li><li>Zeitdilatation: Da jede interne Zustandsänderung (jeder "Tick" einer Atomuhr) auf der endlichen Wechselwirkungsgeschwindigkeit dieser Defekte basiert, strecken sich die internen Signalwege bei einer makroskopischen Bewegung des Gesamtsystems. Die physikalischen Prozesse verlangsamen sich.</li></ul>
+Da unsere Massbänder physikalisch kontrahieren und unsere Uhren verlangsamt takten, messen wir für transversale Gitterschwingungen (Licht) lokalinvariant immer exakt denselben Wert c. Michelson und Morley konnten keinen Gitterwind messen, weil das Monopol-Kondensat als Übertragungsmedium genau jene physikalischen Verformungen an den Messinstrumenten erzwingt, die in der Lorentz-Transformation beschrieben werden. [^1]
 
 ## Flüssiger Raum
 Wenn wir das Gedankenexperiment weiter treiben: Gibt es eine Temperatur, bei der die Bindungen der Monopole aufbricht und wir kein Gitter mehr haben? Was wäre die Folge: Eine ganz anderes Ausbreitungsverhalten. Vielleicht sind Schwarze Löcher keine Singularitäten sondern flüssiges Monopol-Material. Eine Flüssigkeit kann keine Transversalwellen propagieren, Licht wird geschluckt.
 
 ## Quantenmechanik im Monopol-Gitter
-Wenn wir schon am spekulieren sind: Ist die Quantenmechanik eine Folge der Gitterschwingung? Wenn die Gitterkonstante die Planck-Länge ist, gäbe es ganz einfach nichts kleineres. Und eine Wirkung könnte nur übertragen werden, wenn ein Signal stärker als das Temperatur-Rauschen ist, andernfalls geht es darin unter.
+Wenn wir schon am spekulieren sind: Ist die Quantenmechanik eine Folge der Gitterschwingung? Wenn die Gitterkonstante die Planck-Länge ist, gäbe es ganz einfach nichts kleineres. Und eine Wirkung könnte nur übertragen werden, wenn ein Signal stärker als das Temperatur-Rauschen ist, andernfalls geht es darin unter. Wenn wir konsequent sein wollen und die Raumzeit als Monopol-Kristall betrachten, dann hängt die Phononengeschwindigkeit von diesen Faktoren ab:
+<ul>
+<li>Mittlerer abstand der Monopole untereinander (Gitterkonstante)</li>
+<li>Rückstellkraft nach einer Störung (Druck der anderen Monopole)</li>
+<li>Die Trägheit gegen Positionsveränderungen (Selbstinduktion)</li>
+<li>Die Erregung des Gitters</li>
+</ul>
+
+# Footnotes
+[^1]: Dieser Abschnitt zur Lorentz-Invarianz entstand aus einem iterativen Dialog mit der KI Google Gemini. Ausgangspunkt war der Prompt, wie sich das Postulat eines "Monopol-Materials" gegen den klassischen Einwurf des Michelson-Morley-Experiments (den fehlenden Ätherwind) verteidigen lässt. In der Diskussion wurde erarbeitet, wie sich die mathematischen Symmetrien von Poincaré und Lorentz (Längenkontraktion, Zeitdilatation) nativ auf ein Festkörper-Modell übertragen lassen. Der konzeptionelle Durchbruch war der Prompt, Materie nicht als Fremdkörper im leeren Raum zu betrachten, sondern als topologische Defekte, die sich aus dem Material zusammensetzen und sich zwingend an die lokale Propagationsgeschwindigkeit ($c_0$) des Gitters halten müssen. Die finale Textfassung wurde von der KI anschließend auf Wunsch von informellen Analogien in die formellere Terminologie der Festkörperphysik übersetzt.
