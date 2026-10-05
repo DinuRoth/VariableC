@@ -4,7 +4,7 @@ Ich arbeite an einer Analogie zur Allgemeinen Relativitätstheorie,
 ähnlich der Gordon-Metrik oder zu Ideen von Lorentz und FitzGerald, also in einem flachen Raum.
 
 Folgende Postulate:
-1. Ein feststehendes Substrat existiert
+1. Es existiert ein feststehendes, flaches Substrat mit einer fundamentalen physikalischen Auflösungsgrenze (Korrelationslänge $l_0$).
 2. Licht oder allgemein jede Wirkung breitet sich darin mit einer lokalen Geschwindigkeit c aus
 3. Materie ist eine topologische Fehlstelle im Substrat
 4. Die einzelnen Fehlstellen interagieren miteinander, unter Berücksichtigung der Interaktionsgeschwindigkeit
@@ -18,39 +18,56 @@ Folgende Postulate:
 ## Lorentz-Invarianz
 Postulat 1 widerspricht den Experimenten von Michelson und Morley. Wenn aber Postulat 2 berücksichtig wird, zeigt sich Lorentz's Interpretation seiner Invarianz: Die Messinstrumente verändern sich im bewegten Äther.
 
+
 ## Feldgleichungen
 
-### Diffussionsgleichung der Erregung
-Wenn wir die Substrats-Erregung u mit der Erregung einer Fehlstelle J mathematisch darstellen, ist das diese Feldgleichung:
-$$\dot{u} = D \Delta u + J \cdot \delta(x - x_0)$$
+### Diffusionsgleichung der Erregung
+Wenn wir die Substrat-Erregung $u$ mit der Erregung einer Fehlstelle $A = \kappa \cdot M \cdot J$ mathematisch darstellen, lautet die Feldgleichung:
 
-Postulat 6 sagt aus, dass die Propagationsgeschwindigkeit von der Erregung abhängt.
+$$\dot{u} = \nabla \cdot \left( D(u) \nabla u \right) + \kappa \cdot M \cdot J \cdot \delta(x - x_0)$$
 
-$$\dot{u} = \nabla \cdot \left( D(u) \nabla u \right) + J \cdot \delta(x - x_0)$$
-mit der Annahme, dass der Zusammenhang linear ist:
+Postulat 6 besagt, dass die Transportfähigkeit $D(u)$ von der lokalen Erregung abhängt. Unter der Annahme einer umgekehrten Proportionalität:
 
-$D(u) = \frac{\kappa} {u}$
+$$D(u) = \frac{\kappa}{u}$$
 
-ergibt sich:
+ergibt sich die nichtlineare Diffusionsgleichung:
 
-$$\dot{u} = \kappa \Delta (\ln u) + J \cdot \delta(x - x_0)$$
+$$\dot{u} = \kappa \Delta (\ln u) + \kappa \cdot M \cdot J \cdot \delta(x - x_0)$$
 
-Gemäss Postulat 7 gilt: 
-$$\kappa = c$$
+Da der Diffusionskoeffizient $D(u)$ und damit $\kappa$ die Dimension einer Fläche pro Zeit besitzen muss ($[\kappa] = \frac{\text{m}^2}{\text{s}}$), verknüpft sich die Wirkungsgeschwindigkeit $c$ ($[\text{m}/\text{s}]$) aus Postulat 2 mit der minimalen Substratskala $l_0$ ($[\text{m}]$) aus Postulat 1:
 
-Die Erregung einer Fehlstelle ist gemäss Simulation und Kurve-Fitting:
+$$\kappa = c \cdot l_0 \approx (2{,}998 \cdot 10^8 \, \text{m/s}) \cdot (1{,}616 \cdot 10^{-35} \, \text{m}) \approx 4{,}85 \cdot 10^{-27} \, \frac{\text{m}^2}{\text{s}}$$
+
+
+Die Erregung einer Fehlstelle ist gemäss meiner  Simulationen für Eddington und Shapiro (Link zum Code):
 $$ J = \frac{4G}{c^2} = 2.96 \cdot 10^{-27} \frac{m}{kg}$$
 
 Gemini sagt, dass bei grossem $\kappa$, kleinem J und kleiner Fehlstellendichte $\rho$ dieser lineare Zusammenhang gilt:
 
-$$ u(t,\rho) = J \cdot t \cdot \rho $$
+$$ u(t,\rho) = \kappa \cdot J \cdot t \cdot \rho $$
 
 Die Dichte der Baryonischen Masse wird geschätzt auf: $$\rho \approx 4{,}2 \cdot 10^{-28} \text{ kg/m}^3$$
 das Alter des Universums wird geschätzt auf:
 
-$$ t = 4.35 \cdot 10^{17} \text{ Jahre}$$
+$$ t = 4.35 \cdot 10^{17} \text{ s}$$
 
-Damit ist u heute, weit weg von einer Fehlstelle:
-$$ u_{heute} = 5.41 \cdot 10^{-37} $$
+Damit ist u heute, weit weg von einer Fehlstelle mit den astronomischen und physikalischen Kennzahlen:
+* $J = \frac{4G}{c^2} \approx 2{,}97 \cdot 10^{-27} \, \frac{\text{m}}{\text{kg}}$
+* $\rho \approx 4{,}2 \cdot 10^{-28} \, \frac{\text{kg}}{\text{m}^3}$
+* $t \approx 4{,}35 \cdot 10^{17} \, \text{s}$
 
-Das betrachten wir wie ein Erregungs-Teppich
+Ergibt sich der heute im freien Raum akkumulierte Erregungswert zu:
+
+$$u_{\text{heute}} \approx 2{,}63 \cdot 10^{-63} [1]$$
+
+Das betrachten wir wie einen Erregungs-Teppich, die heutige Welt, in der wir Physik betreiben.
+
+### Wellencharakter
+Damit sich eine schnelle Lageänderung von Fehlstellen als Welle im Substrat fortpflanzen kann, braucht es eine Wellengleichung.
+
+$$\ddot{u}(x, t) - c^2 \nabla^2 u(x, t) = q \cdot \delta(x - x_0)$$
+
+Mit der Nichtlinearität von c:
+
+Gemäß den Postulaten 1 und 2 verknüpft der Parameter $\kappa$ die fundamentale Längenskala $l_0$ mit der Ausbreitungsgeschwindigkeit:$$\kappa = c \cdot l_0 \implies c = \frac{\kappa}{l_0}$$Nach Postulat 6 sinkt die Transportfähigkeit des Substrats umgekehrt proportional mit der lokalen Erregung $u(x,t)$. Die konstante Geschwindigkeit $c$ wird somit durch die feldabhängige Funktion $c(u)$ ersetzt:$$c(u) = \frac{\kappa}{l_0 \cdot u(x,t)}$$Ersetzen wir $c$ durch $c(u)$ in der Wellengleichung:$$\ddot{u}(x, t) - \left(\frac{\kappa}{l_0 \cdot u(x, t)}\right)^2 \nabla^2 u(x, t) = q \cdot \delta\big(x - x_0(t)\big)$$Schritt 2: Spezifikation der Quellstärke $q$Die Quellstärke $q$ beschreibt die Anregung des Substrats durch die Fehlstelle. Analog zur Diffusionsgleichung wird sie über die Masse $M$, die fundamentale Anregungskopplung $J$ und die Substratkonstante $\kappa$ definiert:$$q = \kappa \cdot M \cdot J$$Einsetzen von $q$ ergibt:$$\ddot{u}(x, t) - \left(\frac{\kappa}{l_0 \cdot u(x, t)}\right)^2 \nabla^2 u(x, t) = \kappa \cdot M \cdot J \cdot \delta\big(x - x_0(t)\big)$$Schritt 3: Operator- und KurznotationZur besseren Lesbarkeit wenden wir zwei wissenschaftliche Konventionen an:Ersetzung des Nabla-Quadrats durch das Laplace-Symbol ($\nabla^2 \equiv \Delta$).Unterdrückung der expliziten Argumente $(x,t)$ beim Feld $u$ sowie $x_0(t) \to x_0$.Daraus folgt die finale, kompakte Feldgleichung:$$\ddot{u} - \left(\frac{\kappa}{l_0 u}\right)^2 \Delta u = \kappa \cdot M \cdot J \cdot \delta(x - x_0)$$
+
