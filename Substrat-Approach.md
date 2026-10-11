@@ -34,9 +34,17 @@ ergibt sich die nichtlineare Diffusionsgleichung:
 
 $$\dot{u} = \kappa \Delta (\ln u) + \kappa \cdot M \cdot J \cdot \delta(x - x_0)$$
 
+oder umgestellt:
+
+$$\frac{\dot{u}}{\kappa} = \nabla \cdot \left( \frac{\nabla u}{u} \right) + M \cdot J \cdot \delta(x - x_0)$$
+
 Da der Diffusionskoeffizient $D(u)$ und damit $\kappa$ die Dimension einer Fläche pro Zeit besitzen muss ($[\kappa] = \frac{\text{m}^2}{\text{s}}$), verknüpft sich die Wirkungsgeschwindigkeit $c$ ($[\text{m}/\text{s}]$) aus Postulat 2 mit der minimalen Substratskala $l_0$ ($[\text{m}]$) aus Postulat 1:
 
-$$\kappa = c \cdot l_0 \approx (2{,}998 \cdot 10^8 \, \text{m/s}) \cdot (1{,}616 \cdot 10^{-35} \, \text{m}) \approx 4{,}85 \cdot 10^{-27} \, \frac{\text{m}^2}{\text{s}}$$
+$$\kappa = c \cdot l_0 $$
+
+c und $l_0$ sind in dieser Theorie keine Konstanten mehr, sie hängen aber beide von der Erregung ab. Deshalb kann der Wert von $\kappa$ mit den heute gemessenen Werten berechnet werden
+
+$$\kappa \approx (2.998 \cdot 10^8 \, \text{m/s}) \cdot (1.616 \cdot 10^{-35} \, \text{m}) \approx 4.85 \cdot 10^{-27} \, \frac{\text{m}^2}{\text{s}}$$
 
 
 Die Erregung einer Fehlstelle ist gemäss meiner  Simulationen für Eddington und Shapiro (Link zum Code):
@@ -58,16 +66,51 @@ Damit ist u heute, weit weg von einer Fehlstelle mit den astronomischen und phys
 
 Ergibt sich der heute im freien Raum akkumulierte Erregungswert zu:
 
-$$u_{\text{heute}} \approx 2{,}63 \cdot 10^{-63} [1]$$
+$$u_{\text{heute}} \approx 2.63 \cdot 10^{-63} [1]$$
 
-Das betrachten wir wie einen Erregungs-Teppich, die heutige Welt, in der wir Physik betreiben.
+Das betrachten wir wie einen Erregungs-Teppich; die heutige Welt, in der wir Physik betreiben.
+
+### Systemgleichung
+Wenn wir folgendes annehmen: Anzahl Fehlstellen ist proportional zur barionischen Masse und dass sich das Substrat in alle 3 Raumdimensionen mit wachsendem u linear ausbreitet, so kann man das System so beschreiben:
+
+$$\dot u = \kappa \Delta \bigl(\ln u\bigr) + \frac{\kappa J W M}{u^3}$$
+
+Dabei ist W die Kopplung zwischen der Erregung und der Ausdehnung des Substrates. Ich nehme an, dass W konstant ist, so kann W mit den heutigen Schätzwerten bestimmt werden:
+
+$$W = \rho_{heute} \cdot u_{heute}^3 = (1{,}0517 \times 10^{-28} \text{ kg/m}^3) \cdot (2{,}63 \times 10^{-63})^3 = $$
+
+$$ 1.91 \cdot 10^{-216} \frac{kg}{m^3}$$
+
+
+Weil die Dichte mit der dritten Potenz abnimmt kommt es zu einer starken Verlangsamung der Expansion.
+
+#### Ohne Zurückgreifen auf interpretierte Messungen
+
+Wir können uns noch von J trennen und die Masse nicht mehr in kg messen:
+
+$$\frac{\dot{u}}{\kappa} = \Delta (\ln u) + \frac{\lambda \cdot M}{u^3}$$
+
+Wobei hier M eine Massäquivalente Zählzahl ist. $\lambda$ hat dann die Einheit $\frac {1} {m^2}$
+
+$ h \cdot c $ oder $ l_{planck} \cdot c $ als kosmologische Konstante!
+
 
 ### Wellencharakter
 Damit sich eine schnelle Lageänderung von Fehlstellen als Welle im Substrat fortpflanzen kann, braucht es eine Wellengleichung.
 
 $$\ddot{u}(x, t) - c^2 \nabla^2 u(x, t) = q \cdot \delta(x - x_0)$$
 
-Mit der Nichtlinearität von c:
+c ist nicht konstant, sondern
 
-Gemäß den Postulaten 1 und 2 verknüpft der Parameter $\kappa$ die fundamentale Längenskala $l_0$ mit der Ausbreitungsgeschwindigkeit:$$\kappa = c \cdot l_0 \implies c = \frac{\kappa}{l_0}$$Nach Postulat 6 sinkt die Transportfähigkeit des Substrats umgekehrt proportional mit der lokalen Erregung $u(x,t)$. Die konstante Geschwindigkeit $c$ wird somit durch die feldabhängige Funktion $c(u)$ ersetzt:$$c(u) = \frac{\kappa}{l_0 \cdot u(x,t)}$$Ersetzen wir $c$ durch $c(u)$ in der Wellengleichung:$$\ddot{u}(x, t) - \left(\frac{\kappa}{l_0 \cdot u(x, t)}\right)^2 \nabla^2 u(x, t) = q \cdot \delta\big(x - x_0(t)\big)$$Schritt 2: Spezifikation der Quellstärke $q$Die Quellstärke $q$ beschreibt die Anregung des Substrats durch die Fehlstelle. Analog zur Diffusionsgleichung wird sie über die Masse $M$, die fundamentale Anregungskopplung $J$ und die Substratkonstante $\kappa$ definiert:$$q = \kappa \cdot M \cdot J$$Einsetzen von $q$ ergibt:$$\ddot{u}(x, t) - \left(\frac{\kappa}{l_0 \cdot u(x, t)}\right)^2 \nabla^2 u(x, t) = \kappa \cdot M \cdot J \cdot \delta\big(x - x_0(t)\big)$$Schritt 3: Operator- und KurznotationZur besseren Lesbarkeit wenden wir zwei wissenschaftliche Konventionen an:Ersetzung des Nabla-Quadrats durch das Laplace-Symbol ($\nabla^2 \equiv \Delta$).Unterdrückung der expliziten Argumente $(x,t)$ beim Feld $u$ sowie $x_0(t) \to x_0$.Daraus folgt die finale, kompakte Feldgleichung:$$\ddot{u} - \left(\frac{\kappa}{l_0 u}\right)^2 \Delta u = \kappa \cdot M \cdot J \cdot \delta(x - x_0)$$
+$$ c = \frac {\alpha}{u} $$
 
+Wir haben nicht nur eine Quelle, sondern viele mit einer mittleren Dichte $\rho$. Zusammen mit Postulat 9 gilt im Kontinuum
+
+$$\ddot{u}(x, t) - \nabla \cdot \left( \frac{\alpha^2}{u(x, t)^2} \nabla u(x, t) \right) = \frac{q}{\beta^3 \cdot u(x, t)^3}$$
+
+Aus dem "heutigen" c und u (Diffusionsgleichung) kommen wir auf $\alpha$:
+
+$$\alpha \approx 7{,}88 \cdot 10^{-55} \text{ m/s}$$
+
+## Relativität
+Wenn ein Prozess, welcher sich von uns aus gesehen bewegt, Licht erzeugt, so erregt er dort eine Welle im substrat. Wie schnell sich das Licht von dort aus bewegt, hängt also nicht von seiner Geschwindigkeit ab, nur die Wellenform wird beeinflusst. Es gibt eine Verschiebung der Frequenz, nicht der Geschwindigkeit.
