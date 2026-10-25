@@ -4,15 +4,15 @@ Ich arbeite an einer Analogie zur Allgemeinen Relativitätstheorie,
 ähnlich der Gordon-Metrik oder zu Ideen von Lorentz und FitzGerald, also in einem flachen Raum.
 
 Folgende Postulate:
-1. Es existiert ein feststehendes, flaches Substrat mit einer fundamentalen physikalischen Auflösungsgrenze (Korrelationslänge $l_0$).
+1. Es existiert ein raumzeitlich starres, flaches und räumlich endliches Substrat mit einer diskreten fundamentalen Struktur (Knotennetzwerk mit mittlerem Gitterabstand $l_0$).
 2. Licht oder allgemein jede Wirkung breitet sich darin mit einer lokalen Geschwindigkeit c aus
-3. Materie ist eine topologische Fehlstelle im Substrat
+3. Materie ist eine topologische Fehlstelle im Substrat. Jede stabile Fehlstelle umfasst eine diskrete, wohldefinierte Anzahl von Substrat-Knoten.
 4. Die einzelnen Fehlstellen interagieren miteinander, unter Berücksichtigung der Interaktionsgeschwindigkeit
 5. Die Anwesenheit von Fehlstellen regen das Substrat an.
 6. Das angeregte Substrat kann Wirkungen schlechter transportieren
 7. Substrat-Anregungen werden wie jede andere Wirkung propagiert
-8. Sich bewegende Fehlstellen verzerren das Substrat und erregt es zusätzlich
-9. Ein erregtes Substrat nimmt mehr Raum ein
+8. Ein erregtes Substrat nimmt mehr Raum ein, dabei wächst der Raumbedarf in einer Dimension proportional zur Erregung
+9. Sich bewegende Fehlstellen verzerren das Substrat und erregt es zusätzlich
 10. Ein stark erregtes Substrat macht einen Phasenübergang. Dabei verliert es die Fehlstellen und die Möglichkeit des Wirkungstransportes
 
 ## Lorentz-Invarianz
@@ -92,7 +92,34 @@ $$\frac{\dot{u}}{\kappa} = \Delta (\ln u) + \frac{\lambda \cdot M}{u^3}$$
 
 Wobei hier M eine Massäquivalente Zählzahl ist. $\lambda$ hat dann die Einheit $\frac {1} {m^2}$
 
+### Wellengleichung Ansatz 2
+
+$$\frac{u^2}{\alpha^2} \frac{\partial^2 u}{\partial t^2} - \nabla^2 u = \frac{\lambda}{u^3} n(\mathbf{x})$$
+
+- $u(\mathbf{x}, t)$: Dimensionsloses Erregungsfeld $[1]$
+- $\alpha$: Fundamentale Geschwindigkeitskonstante $[\text{m}/\text{s}]$. Wenn wir $u_{heute}$ auf 1 normieren, ist $\alpha$ 299'792'458 $\text{ m/s}$
+- $\lambda$: Fundamentale Koppel-Länge des Substrats 1.55 $\cdot 10^{-53}$ $[\text{m}]$
+- $n(\mathbf{x}) = \sum_i w_i \delta^3(\mathbf{x} - \mathbf{x}_i)$: Koordinaten-Teilchendichte $[1/\text{m}^3]$, gewichtet mit $w_N = 1$ und $w_e \approx \frac{1}{1836}$.
+
+### Wellengleichung Ansatz 3
+Im Ansatz 2 wird die Welle nicht von der Substrat-Dichte beeinflusst. Das müssen wir korrigieren:
+
+$$\nabla \cdot \left( \frac{1}{u^5} \nabla u \right) + \frac{1}{2\alpha^2} \frac{\partial^2}{\partial t^2} \left( \frac{1}{u^2} \right) = - \frac{\lambda}{u^3} n(\mathbf{x}, t)$$
+
+oder mit $\Phi = \frac{1}{u^2}$
+
+$$\nabla^2 \left( \Phi^2 \right) - \frac{2}{\alpha^2} \frac{\partial^2 \Phi}{\partial t^2} = 4\lambda \, \mathbf{\Phi^{3/2}} \, n(\mathbf{x}, t)$$
+
+### Gedanken
+
+$\lambda$ zu bestimmen ist sehr schwierig. Wir können die Messungen und Schätzungen der aktuellen Physik verwenden, aber diese basieren z.T. auf den Erkenntnissen der $\lambda$CDM-Theorie (Alter und Grösse des beobachtbaren Universums), was eine falsche Basis für diese Theorie ist. Ich sehe momentan aber keinen anderen Weg, als mal diese Werte zu nehmen und von dort aus Anpassungen zu machen. Hier gehen wir davon aus, dass c früher grösser war, das beobachtete Volumen also viel grösser ist und das Universum älter als aktuell geschätzt ist.
+
+Wir haben eine Gleichung mit 2 Unbekannten. Von $\lambda$ kennen wir den J-Anteil (genau vermessen), für W braucht es eine aktuelle mittlere Dichte der Materie und das Alter des Universums.
+Schön wäre es, wenn das ab-Initio hergeleitet werden könnte, aber bei t=0 haben wir eine Singularität
+
 $ h \cdot c $ oder $ l_{planck} \cdot c $ als kosmologische Konstante!
+
+Schwere Masse = Träge Masse (Äquivalenzprinzip). Das deutet doch darauf hin, dass die Massenträgheit von u abhängt (Machsches Prinzip)
 
 
 ### Wellencharakter
@@ -114,3 +141,9 @@ $$\alpha \approx 7{,}88 \cdot 10^{-55} \text{ m/s}$$
 
 ## Relativität
 Wenn ein Prozess, welcher sich von uns aus gesehen bewegt, Licht erzeugt, so erregt er dort eine Welle im substrat. Wie schnell sich das Licht von dort aus bewegt, hängt also nicht von seiner Geschwindigkeit ab, nur die Wellenform wird beeinflusst. Es gibt eine Verschiebung der Frequenz, nicht der Geschwindigkeit.
+
+## Massen im Substrat
+
+$$\frac{d}{dt}\left( \frac{m_0 \, \mathbf{v}}{\sqrt{1 - \dfrac{u^2 v^2}{\alpha^2}}} \right) = m_0 \frac{\alpha^2}{u^3} \left[ \nabla u + \mathbf{f}_{\text{dyn}}(\mathbf{v}, u) \right]$$
+
+$$\mathbf{f}_{\text{dyn}}(\mathbf{v}, u) \approx - \frac{2 (\mathbf{v} \cdot \nabla u)}{c(u)^2} \mathbf{v} + \frac{v^2}{c(u)^2} \nabla u = - \frac{2 u^2 (\mathbf{v} \cdot \nabla u)}{\alpha^2} \mathbf{v} + \frac{u^2 v^2}{\alpha^2} \nabla u$$
